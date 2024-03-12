@@ -1,0 +1,108 @@
+# Fedora Kinoite rpm-ostree-aliases
+alias sudoSUpgradeAll-Except-flatpaks-then-Exit="sudo su && rpm-ostree update && rpm-ostree upgrade -y  && exit"
+alias Root4ever-upgrade="sudo su & rpm-ostree update & rpm-ostree upgrade -y"
+
+alias ostupd='sudo rpm-ostree update'
+alias ostupg='sudo rpm-ostree upgrade && flatpak upgrade -y '
+alias ostin='sudo rpm-ostree install'
+alias ostUn='sudo rpm-ostree uninstall'
+alias ostat='rpm-ostree status'
+alias ostCanc='sudo rpm-ostree --cancel'
+alias ostcheck='rpm-ostree --check'
+
+alias shutd='shutdown'
+alias rebo='reboot'
+
+alias dnfs='dnf search'
+1
+# Systemctl lazy aliases
+alias SystEn="sudo systemctl enable"
+alias SystSt="sudo systemctl start"
+#alias Syst
+
+
+# Flatpak aliases
+alias flati='flatpak install'
+alias flats='flatpak search'
+alias flatup='flatpak upgrade'
+alias flatun='flatpak uninstall'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+
+# eza-aliases
+# List all files, sorted by changed-, time-changed date
+alias eat='eza -la --icons --color=always  --color-scale  --group-directories-first -g -smodified'
+alias e='eza --icons --color=auto  --color-scale' #--group-directories-first
+alias es='eza --icons --color=always --color-scale --group-directories-first  -g'
+alias ea='eza -la --icons --color=always --color-scale --group-directories-first  -g'
+alias el='eza -ll  --icons --color=always --color-scale --group-directories-first  -g'
+
+#  lazy aliases
+alias cl='clear'
+alias ..='cd .. && eat'
+alias cpv='cp -v'
+alias cpr='cp -rv'
+alias fat='bat'
+alias zshc='nano ~/.zshrc'
+alias ohmyzsh="cd  ~/.oh-my-zsh"
+alias srz="source ~/.zshrc"
+alias rmrf="rm -rvf"
+
+# systemctl aliases
+alias sussE='sudo systemctl --enable'
+alias susS='sudo systemctl --start'
+
+
+#hashchecking aliases
+alias md5='md5sum -c'
+alias sha2='sha256sum -c'
+alias sha5='sha512sum -c'
+
+#toolbox aliases
+alias toolbent='toolbox enter'
+alias toolcr='toolbox create'
+alias toolblist='toolbox list'
+
+#distrobox aliases
+alias distbcre='distrobox create'
+alias distblis='distrobox list'
+alias distbstop='distrobox stop'
+alias distbenter='distrobox enter'
+
+
+# pacman aliases personal
+#alias pacs="pacman -Ss"
+#alias paci="sudo pacman -S"
+#alias pacy="sudo pacman -Syu && flatpak update"
+#alias pacrem="sudo pacman -R"
+
+# paru  aliases
+#alias pars="paru -Ss"
+#alias pari="paru -S"
+#alias parem="paru -R"
+
+# picom
+alias picomb="picom -b --experimental-backends"
+
+# misc aliases
+#alias akm="akm --small"
+
+
+#alias pacsy="pacman -Sy"
+
+
+# source and git-aliases
+#alias gitrec='git clone --recursive'
+alias gitrd='git clone --depth=1 --recursive'
+alias gp='git pull'
+
+#czkawka aliases
+alias czk='czkawka_cli'
+alias czkdup='czkawka_cli dup'
+
+
+
